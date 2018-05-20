@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+    <title>Support message</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <style>
+        body         { padding-top:80px; }
+    </style>
+</head>
+<body>
+<div class="container">
+
+    <div class="jumbotron text-center">
+        <p>please type your message and select topic</p>
+        <div class="form-signin">
+            <form action="/send" method="post">
+                <input type="text" name="email" id="email" placeholder="your email" class="form-control input-lg">
+                <br> <input type="text" name="msg" id="msg" placeholder="your massage" class="form-control input-lg">
+                <br><select name="topic" id="topic" class="form-control input-lg" required>
+                        <option value="" selected disabled>your topic</option>
+                    <option value="hardware">hardware</option>
+                    <option value="software">software</option>
+                    <option value="other">other</option>
+                </select>
+                <br><button class="btn btn-lg btn-primary btn-block" type="submit">Send</button>
+            </form>
+        </div>
+        
+    </div>
+
+   
+
+</div>
+</body>
+</html>
